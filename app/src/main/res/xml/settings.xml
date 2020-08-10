@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Настройки шрифта">
+        <ListPreference
+            android:defaultValue="Средний"
+            android:entries="@array/setting_punkt"
+            android:entryValues="@array/setting_punkt"
+            android:key="setting_font"
+            android:title="Выберите шрифт" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@drawable/ic_action_category_color"
+        android:textColor="#CDDC39"
+        android:title="Цвет текста">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="color_red"
+            android:title="Красный цвет">
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="color_green"
+            android:title="Зеленый цвет">
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="color_purple"
+            android:title="Фиолетовый цвет">
+        </SwitchPreference>
+
+        <SwitchPreference
+        android:defaultValue="true"
+        android:key="color_blue"
+        android:title="Синий цвет">
+    </SwitchPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
